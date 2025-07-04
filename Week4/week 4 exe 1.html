@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 1 - Image Styling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    /* Border 5px solid for image1.jpg */
+    #image1 {
+      border: 5px solid black;
+      display: block;
+      margin-bottom: 20px;
+    }
+    /* Resize image2 to 100x100 and wrap in anchor */
+    #image2 {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    /* Align image3 to the right */
+    #image3 {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    /* Leave 50px horizontal and vertical space around image4 */
+    #image4 {
+      margin: 50px;
+      display: block;
+      clear: both; /* clear float from image3 */
+    }
+    /* Text aligned properly with images */
+    p {
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Exercise 1: Image Styling Example</h2>
+
+  <!-- Image1 with 5px border -->
+  <img id="image1" src="image1.jpg" alt="Image 1 - with border" />
+
+  <!-- Image2 resized and wrapped in anchor -->
+  <a href="image2.jpg" target="_blank" title="Open original image2">
+    <img id="image2" src="image2.jpg" alt="Image 2 - resized" />
+  </a>
+
+  <!-- Image3 aligned right -->
+  <img id="image3" src="image3.jpg" alt="Image 3 - aligned right" />
+
+  <!-- Text that wraps around image3 -->
+  <p>
+    This is some text aligned with respect to image3 which is floated to the right. The text
+    flows around the image, creating a nice layout that balances the visual content with
+    readable text.
+  </p>
+
+  <!-- Image4 with 50px margin horizontally and vertically -->
+  <img id="image4" src="image4.png" alt="Image 4 - spaced" />
+
+  <p>
+    Additional text below image4 which has 50 pixels of space around it both horizontally and vertically.
+  </p>
+</body>
+</html>
