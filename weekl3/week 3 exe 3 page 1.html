@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page 1 - Landscape Background</title>
+  <style>
+    /* Make body fill the viewport and use landscape.jpg as background */
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('landscape.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    /* Container to hold text with a semi-transparent background for readability */
+    .text-container {
+      background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+      color: white;
+      padding: 30px;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="text-container">
+    <h1>What is Web Design?</h1>
+    <p>
+      Web design refers to the design of websites that are displayed on the internet.
+      It usually refers to the user experience aspects of website development rather
+      than software development. Web design used to be focused on designing websites
+      for desktop browsers; however, since the mid-2010s, design for mobile and tablet
+      browsers has become ever-increasingly important.
+    </p>
+  </div>
+</body>
+</html>
