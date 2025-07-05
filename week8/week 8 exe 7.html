@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Exercise 7</title>
+    <style>
+        table { border-collapse: collapse; width: 300px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        .alt { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <script>
+        var data = [
+            { sn: 1, name: "Name 1", image: "1.jpg" },
+            { sn: 2, name: "Name 2", image: "2.jpg" },
+            { sn: 3, name: "Name 3", image: "3.jpg" },
+            { sn: 4, name: "Name 4", image: "4.jpg" }
+        ];
+        document.write("<table><tr><th>S.N.</th><th>Name</th><th>Image</th></tr>");
+        for (var i = 0; i < data.length; i++) {
+            var rowClass = (i % 2 === 0) ? "" : "alt";
+            document.write("<tr class='" + rowClass + "'><td>" + data[i].sn + "</td><td>" + data[i].name + "</td><td><img src='" + data[i].image + "' width='50'></td></tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
